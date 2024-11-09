@@ -1,17 +1,18 @@
 const apiKey = "f38eefo48bt62b0f4f4597fdbecfda4d";
-const apiBaseUrl = "https://api.shecodes.io/weather/v1/forecast?lon={lon}&lat={lat}&key={key}";
- 
+
 async function fetchWeather(city) {
   try {
-    const response = await fetch(`${apiBaseUrl}/current?query=${city}&key=${apiKey}&units=metric`);
- 
+    const response = await fetch(
+      `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`
+    );
+
     // Check if the response is OK
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
- 
+
     const data = await response.json();
- 
+
     // Check if data is valid
     if (data && data.temperature && data.condition) {
       updateWeatherDisplay(data);
