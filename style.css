@@ -1,0 +1,109 @@
+/* Style adjustments for overall look */
+body {
+    background: linear-gradient(122.3deg, rgb(255, 237, 134) 14.6%, rgb(243, 167, 80) 29.6%, rgb(255, 178, 62) 42.1%, rgb(247, 149, 21) 56.7%, rgb(245, 105, 12) 68.7%, rgb(253, 162, 24) 84.8%);
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #f34d0b;
+    text-decoration: none;
+}
+
+.weather-app {
+    background: rgb(243, 145, 99);
+    max-width: 600px;
+    margin: 45px auto;
+    box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+    border-radius: 16px;
+    padding: 30px;
+}
+
+/* Style for header search form */
+header {
+    border-bottom: 1px solid #dfe240;
+    padding-bottom: 30px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form-input {
+    background-color: #f9f7fe;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+}
+
+.search-form-button {
+    background: hsl(293, 83%, 67%);
+    padding: 15px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    color: #111;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.search-form-button:hover {
+    background: hsl(293, 73%, 57%);
+}
+
+main {
+    padding: 30px 0;
+}
+
+/* Weather display styles */
+.weather-app-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-app-city {
+    font-size: 38px;
+    line-height: 48px;
+    margin: 0;
+}
+
+.weather-app-details {
+    font-size: 16px;
+    color: rgba(39, 33, 66, 0.6);
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.weather-app-icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.weather-app-temp-unit {
+    display: flex;
+    align-items: baseline;
+}
+
+.weather-app-temperature {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.weather-app-unit {
+    font-size: 24px;
+    margin-left: 5px;
+    color: #333;
+}
+
+footer {
+    border-top: 1px solid #f9f7fe;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+}
