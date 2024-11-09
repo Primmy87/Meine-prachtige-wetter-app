@@ -1,8 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
-git add index.html
-git commit -m "Add index.html"
-git push
-git add style.css
-git commit -m "Add style.css file"
-git push
+git add .
+
